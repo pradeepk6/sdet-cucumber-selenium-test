@@ -6,6 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
-                 glue = "com.cc.practicaltest.steps")
+        tags = "not @pending",
+        monochrome = true,
+        plugin = {"pretty", "html:target/cucumber"},
+        glue = {"com.cc.practicaltest.steps", "com.cc.practicaltest.support"})
 public class TestRunner {
 }
