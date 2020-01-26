@@ -42,7 +42,6 @@ Feature: Store Finder
     And should contain store address1 <addr1>
     And should contain store address2 <addr2>
     And should contain store telephone <tel>
-
     And should contain store operating info <operatingInfo>
     And should contain store opening hours <openingHours>
     And should contain services and facilities <servicesAndFacilities>
