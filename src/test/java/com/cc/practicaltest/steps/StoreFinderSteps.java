@@ -51,28 +51,4 @@ public class StoreFinderSteps {
         String storeDetails = resultsList.get(0).getAttribute("innerText");
         assertTrue(storeDetails.toLowerCase().contains(resultTerm.toLowerCase()));
     }
-
-    @Then("resultsFilter fragment should be loaded")
-    public void resultsfilter_fragment_should_be_loaded() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
-    }
-
-    @Then("google map should be loaded")
-    public void google_map_should_be_loaded() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
-    }
-
-    @Then("recipe fragment should be loaded")
-    public void recipe_fragment_should_be_loaded() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
-    }
-
-    @Then("store-finder fragment should be loaded")
-    public void store_finder_fragment_should_be_loaded() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
-    }
 }
