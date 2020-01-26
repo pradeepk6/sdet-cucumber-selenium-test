@@ -37,7 +37,7 @@ Feature: Store Finder
   @pending
   Scenario Outline: A search result should contain all details of the Store
     When I search for <searchTerm>
-    Then store header should contain store header <header>
+    Then should contain store header <header>
     And should contain store distance <distance>
     And should contain store address1 <addr1>
     And should contain store address2 <addr2>
