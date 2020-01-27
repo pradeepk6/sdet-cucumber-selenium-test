@@ -5,7 +5,8 @@ import com.google.inject.Inject;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class FindOptions extends BasePage {
+
+public class StoreFinderWidget extends BasePage {
 
     @FindBy(css = "input[name='searchLocation']")
     public WebElement findMyStore_txtBox;
@@ -14,7 +15,7 @@ public class FindOptions extends BasePage {
     public WebElement findMyStore_submitButton;
 
     @Inject
-    public FindOptions(World driver) {
+    public StoreFinderWidget(World driver) {
         super(driver);
     }
 
