@@ -11,7 +11,6 @@ public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-
     public BasePage(World world) {
         this.driver = world.driver;
         wait = new WebDriverWait(driver, 15, 1000);

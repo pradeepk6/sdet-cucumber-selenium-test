@@ -16,24 +16,16 @@ public class StoreFinderResultsPage extends BasePage {
     Header header;
     @Inject
     Footer footer;
+    @Inject
+    RecipePageFragment recipePageFragment;
+    @Inject
+    StoreFinderWidget storeFinderWidget;
 
     @FindBy(css = "div#totals h3")
     public WebElement resultsHeader;
 
-    @FindBy(css = "div#filters")
-    public WebElement filtersDiv;
-
-    @FindBy(css = "div#map")
-    public WebElement mapDiv;
-
     @FindBy(css = "div#results div.accordion-item")
     public List<WebElement> resultsList;
-
-    @Inject
-    StoreFinderWidget storeFinderWidget;
-
-    @Inject
-    RecipePageFragment recipePageFragment;
 
     @Inject
     public StoreFinderResultsPage(World driver) {
@@ -44,23 +36,11 @@ public class StoreFinderResultsPage extends BasePage {
         return wait.until(ExpectedConditions.visibilityOf(resultsHeader)).getAttribute("innerText");
     }
 
-    public WebElement getMapDiv() {
-        return mapDiv;
-    }
-
     public List<WebElement> getSearchResults() {
         return resultsList;
     }
 
     public StoreFinderWidget getStoreFinderWidget() {
         return storeFinderWidget;
-    }
-
-    public Header getHeader() {
-        return header;
-    }
-
-    public Footer getFooter() {
-        return footer;
     }
 }
